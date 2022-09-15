@@ -24,7 +24,7 @@
           <int>3</int>
         </entry>
       </elementAttributes>
-      <pos x="200" y="-300"/>
+      <pos x="120" y="-300"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -42,7 +42,7 @@
           <int>3</int>
         </entry>
       </elementAttributes>
-      <pos x="200" y="360"/>
+      <pos x="120" y="360"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -60,7 +60,7 @@
           <int>3</int>
         </entry>
       </elementAttributes>
-      <pos x="200" y="-20"/>
+      <pos x="120" y="-20"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -74,7 +74,7 @@
           <string>WE</string>
         </entry>
       </elementAttributes>
-      <pos x="200" y="-140"/>
+      <pos x="120" y="-140"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -92,7 +92,7 @@
           <int>16</int>
         </entry>
       </elementAttributes>
-      <pos x="200" y="60"/>
+      <pos x="120" y="60"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -154,26 +154,26 @@
         <entry>
           <string>Testdata</string>
           <testData>
-            <dataString>clk RS1 RS2 WS  WE   IN     OUT1   OUT2  FLAG FLEN NO-OP PC_
-c    0   0  0   1   0x1234 0x0000 0x0000  X    X    1    0
-c    1   0  1   1   0xBEEF 0xBEEF 0x0000  X    X    1    0
-c    2   1  2   1   0xDEAD 0xDEAD 0xBEEF  X    X    1    0
-c    3   2  3   1   0xFFFF 0xFFFF 0xDEAD  X    X    1    0
-c    3   2  3   0   0xABCD 0xFFFF 0xDEAD  X    X    1    0
-c    3   2  2   0   0xABCD 0xFFFF 0xDEAD  X    X    1    0
-c    1   0  1   0   0xABCD 0xBEEF 0x0000  X    X    1    0
-c    1   0  0   0   0xABCD 0xBEEF 0x0000  X    X    1    0
-c    1   0  2   1   0xBADE 0xBEEF 0x0000  X    X    1    0
-c    0   2  2   1   0xBADE 0x0000 0xBADE  X    X    1    0
-c    0   0  2   0   0x1234 0x0000 0x0000  X    X    1    0
-c    2   3  0   1   0x0000 0xBADE 0xFFFF  X    X    1    0
-c    0   0  2   0   0x1234 0x0000 0x0000  X    X    1    0
+            <dataString>clk RS1 RS2 WS  WE   IN     OUT1   OUT2  FLAG FLEN 
+c    0   0  0   1   0x1234 0x0000 0x0000  X    X    
+c    1   0  1   1   0xBEEF 0xBEEF 0x0000  X    X    
+c    2   1  2   1   0xDEAD 0xDEAD 0xBEEF  X    X    
+c    3   2  3   1   0xFFFF 0xFFFF 0xDEAD  X    X    
+c    3   2  3   0   0xABCD 0xFFFF 0xDEAD  X    X    
+c    3   2  2   0   0xABCD 0xFFFF 0xDEAD  X    X    
+c    1   0  1   0   0xABCD 0xBEEF 0x0000  X    X    
+c    1   0  0   0   0xABCD 0xBEEF 0x0000  X    X    
+c    1   0  2   1   0xBADE 0xBEEF 0x0000  X    X    
+c    0   2  2   1   0xBADE 0x0000 0xBADE  X    X    
+c    0   0  2   0   0x1234 0x0000 0x0000  X    X    
+c    2   3  0   1   0x0000 0xBADE 0xFFFF  X    X    
+c    0   0  2   0   0x1234 0x0000 0x0000  X    X    
    
 
 loop(flag, 1&lt;&lt;4)
 	let in = random(1&lt;&lt;16);
-c    5   5  X   X   (in)   (flag) (flag) (flag) 1    1   0
-c    5   5  X   X   (in)   (flag) (flag) (flag) 0    1   0
+c    5   5  X   X   (in)   (flag) (flag) (flag) 1    
+c    5   5  X   X   (in)   (flag) (flag) (flag) 0   
 end loop </dataString>
           </testData>
         </entry>
@@ -344,7 +344,7 @@ end loop </dataString>
           <int>3</int>
         </entry>
       </elementAttributes>
-      <pos x="220" y="-220"/>
+      <pos x="140" y="-220"/>
     </visualElement>
     <visualElement>
       <elementName>In</elementName>
@@ -358,7 +358,7 @@ end loop </dataString>
           <string>FLEN</string>
         </entry>
       </elementAttributes>
-      <pos x="200" y="460"/>
+      <pos x="120" y="460"/>
     </visualElement>
     <visualElement>
       <elementName>Register</elementName>
@@ -390,7 +390,7 @@ end loop </dataString>
           <int>4</int>
         </entry>
       </elementAttributes>
-      <pos x="200" y="420"/>
+      <pos x="120" y="420"/>
     </visualElement>
     <visualElement>
       <elementName>Splitter</elementName>
@@ -404,7 +404,7 @@ end loop </dataString>
           <string>16</string>
         </entry>
       </elementAttributes>
-      <pos x="300" y="420"/>
+      <pos x="200" y="420"/>
     </visualElement>
     <visualElement>
       <elementName>Const</elementName>
@@ -418,7 +418,7 @@ end loop </dataString>
           <int>12</int>
         </entry>
       </elementAttributes>
-      <pos x="280" y="440"/>
+      <pos x="180" y="440"/>
     </visualElement>
     <visualElement>
       <elementName>Register</elementName>
@@ -482,7 +482,7 @@ end loop </dataString>
           <int>16</int>
         </entry>
       </elementAttributes>
-      <pos x="580" y="720"/>
+      <pos x="560" y="720"/>
     </visualElement>
     <visualElement>
       <elementName>Const</elementName>
@@ -496,21 +496,7 @@ end loop </dataString>
           <long>0</long>
         </entry>
       </elementAttributes>
-      <pos x="600" y="680"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Multiplexer</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Bits</string>
-          <int>16</int>
-        </entry>
-        <entry>
-          <string>flipSelPos</string>
-          <boolean>true</boolean>
-        </entry>
-      </elementAttributes>
-      <pos x="360" y="540"/>
+      <pos x="560" y="680"/>
     </visualElement>
     <visualElement>
       <elementName>Out</elementName>
@@ -537,54 +523,43 @@ end loop </dataString>
       <pos x="720" y="440"/>
     </visualElement>
     <visualElement>
-      <elementName>In</elementName>
+      <elementName>Const</elementName>
+      <elementAttributes/>
+      <pos x="440" y="600"/>
+    </visualElement>
+    <visualElement>
+      <elementName>Probe</elementName>
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>NC</string>
+          <string>PC_OUT</string>
         </entry>
       </elementAttributes>
-      <pos x="200" y="680"/>
+      <pos x="740" y="540"/>
     </visualElement>
     <visualElement>
       <elementName>Multiplexer</elementName>
-      <elementAttributes/>
-      <pos x="400" y="620"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Const</elementName>
-      <elementAttributes/>
-      <pos x="380" y="620"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Const</elementName>
       <elementAttributes>
         <entry>
-          <string>Value</string>
-          <long>0</long>
+          <string>Bits</string>
+          <int>16</int>
+        </entry>
+        <entry>
+          <string>flipSelPos</string>
+          <boolean>true</boolean>
         </entry>
       </elementAttributes>
-      <pos x="380" y="660"/>
+      <pos x="360" y="540"/>
     </visualElement>
     <visualElement>
       <elementName>Probe</elementName>
       <elementAttributes>
         <entry>
           <string>Label</string>
-          <string>NC</string>
+          <string>ADDER</string>
         </entry>
       </elementAttributes>
-      <pos x="260" y="640"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Probe</elementName>
-      <elementAttributes>
-        <entry>
-          <string>Label</string>
-          <string>PC_</string>
-        </entry>
-      </elementAttributes>
-      <pos x="700" y="620"/>
+      <pos x="360" y="700"/>
     </visualElement>
   </visualElements>
   <wires>
@@ -625,23 +600,23 @@ end loop </dataString>
       <p2 x="700" y="200"/>
     </wire>
     <wire>
-      <p1 x="260" y="-220"/>
+      <p1 x="180" y="-220"/>
       <p2 x="480" y="-200"/>
     </wire>
     <wire>
-      <p1 x="260" y="-200"/>
+      <p1 x="180" y="-200"/>
       <p2 x="480" y="-60"/>
     </wire>
     <wire>
-      <p1 x="260" y="-180"/>
+      <p1 x="180" y="-180"/>
       <p2 x="480" y="60"/>
     </wire>
     <wire>
-      <p1 x="260" y="-160"/>
+      <p1 x="180" y="-160"/>
       <p2 x="480" y="180"/>
     </wire>
     <wire>
-      <p1 x="260" y="-140"/>
+      <p1 x="180" y="-140"/>
       <p2 x="480" y="320"/>
     </wire>
     <wire>
@@ -661,12 +636,8 @@ end loop </dataString>
       <p2 x="540" y="580"/>
     </wire>
     <wire>
-      <p1 x="260" y="-80"/>
+      <p1 x="180" y="-80"/>
       <p2 x="380" y="540"/>
-    </wire>
-    <wire>
-      <p1 x="440" y="640"/>
-      <p2 x="460" y="640"/>
     </wire>
     <wire>
       <p1 x="680" y="260"/>
@@ -677,19 +648,19 @@ end loop </dataString>
       <p2 x="480" y="580"/>
     </wire>
     <wire>
+      <p1 x="540" y="580"/>
+      <p2 x="640" y="580"/>
+    </wire>
+    <wire>
       <p1 x="340" y="580"/>
       <p2 x="360" y="580"/>
     </wire>
     <wire>
-      <p1 x="540" y="580"/>
-      <p2 x="580" y="580"/>
+      <p1 x="640" y="580"/>
+      <p2 x="740" y="580"/>
     </wire>
     <wire>
-      <p1 x="580" y="580"/>
-      <p2 x="700" y="580"/>
-    </wire>
-    <wire>
-      <p1 x="700" y="580"/>
+      <p1 x="740" y="580"/>
       <p2 x="760" y="580"/>
     </wire>
     <wire>
@@ -697,15 +668,15 @@ end loop </dataString>
       <p2 x="760" y="-140"/>
     </wire>
     <wire>
-      <p1 x="200" y="-140"/>
-      <p2 x="220" y="-140"/>
+      <p1 x="120" y="-140"/>
+      <p2 x="140" y="-140"/>
     </wire>
     <wire>
       <p1 x="340" y="140"/>
       <p2 x="480" y="140"/>
     </wire>
     <wire>
-      <p1 x="200" y="460"/>
+      <p1 x="120" y="460"/>
       <p2 x="480" y="460"/>
     </wire>
     <wire>
@@ -714,30 +685,30 @@ end loop </dataString>
     </wire>
     <wire>
       <p1 x="540" y="720"/>
-      <p2 x="580" y="720"/>
+      <p2 x="560" y="720"/>
     </wire>
     <wire>
-      <p1 x="320" y="720"/>
+      <p1 x="300" y="720"/>
+      <p2 x="360" y="720"/>
+    </wire>
+    <wire>
+      <p1 x="360" y="720"/>
       <p2 x="480" y="720"/>
     </wire>
     <wire>
-      <p1 x="200" y="-20"/>
-      <p2 x="240" y="-20"/>
+      <p1 x="120" y="-20"/>
+      <p2 x="160" y="-20"/>
     </wire>
     <wire>
       <p1 x="340" y="20"/>
       <p2 x="480" y="20"/>
     </wire>
     <wire>
-      <p1 x="380" y="660"/>
-      <p2 x="400" y="660"/>
-    </wire>
-    <wire>
       <p1 x="340" y="280"/>
       <p2 x="480" y="280"/>
     </wire>
     <wire>
-      <p1 x="460" y="600"/>
+      <p1 x="440" y="600"/>
       <p2 x="480" y="600"/>
     </wire>
     <wire>
@@ -753,7 +724,7 @@ end loop </dataString>
       <p2 x="760" y="220"/>
     </wire>
     <wire>
-      <p1 x="320" y="540"/>
+      <p1 x="300" y="540"/>
       <p2 x="360" y="540"/>
     </wire>
     <wire>
@@ -769,12 +740,12 @@ end loop </dataString>
       <p2 x="480" y="-100"/>
     </wire>
     <wire>
-      <p1 x="320" y="420"/>
+      <p1 x="220" y="420"/>
       <p2 x="480" y="420"/>
     </wire>
     <wire>
-      <p1 x="200" y="420"/>
-      <p2 x="300" y="420"/>
+      <p1 x="120" y="420"/>
+      <p2 x="200" y="420"/>
     </wire>
     <wire>
       <p1 x="420" y="40"/>
@@ -782,31 +753,19 @@ end loop </dataString>
     </wire>
     <wire>
       <p1 x="540" y="680"/>
-      <p2 x="600" y="680"/>
+      <p2 x="560" y="680"/>
     </wire>
     <wire>
-      <p1 x="200" y="680"/>
-      <p2 x="260" y="680"/>
-    </wire>
-    <wire>
-      <p1 x="260" y="680"/>
-      <p2 x="420" y="680"/>
-    </wire>
-    <wire>
-      <p1 x="200" y="360"/>
+      <p1 x="120" y="360"/>
       <p2 x="720" y="360"/>
     </wire>
     <wire>
-      <p1 x="200" y="-300"/>
+      <p1 x="120" y="-300"/>
       <p2 x="720" y="-300"/>
     </wire>
     <wire>
       <p1 x="420" y="300"/>
       <p2 x="480" y="300"/>
-    </wire>
-    <wire>
-      <p1 x="380" y="620"/>
-      <p2 x="400" y="620"/>
     </wire>
     <wire>
       <p1 x="460" y="-240"/>
@@ -821,8 +780,8 @@ end loop </dataString>
       <p2 x="480" y="440"/>
     </wire>
     <wire>
-      <p1 x="280" y="440"/>
-      <p2 x="300" y="440"/>
+      <p1 x="180" y="440"/>
+      <p2 x="200" y="440"/>
     </wire>
     <wire>
       <p1 x="740" y="440"/>
@@ -833,16 +792,12 @@ end loop </dataString>
       <p2 x="720" y="440"/>
     </wire>
     <wire>
-      <p1 x="540" y="700"/>
-      <p2 x="580" y="700"/>
-    </wire>
-    <wire>
-      <p1 x="200" y="60"/>
+      <p1 x="120" y="60"/>
       <p2 x="340" y="60"/>
     </wire>
     <wire>
-      <p1 x="320" y="540"/>
-      <p2 x="320" y="720"/>
+      <p1 x="540" y="700"/>
+      <p2 x="640" y="700"/>
     </wire>
     <wire>
       <p1 x="720" y="300"/>
@@ -853,12 +808,16 @@ end loop </dataString>
       <p2 x="720" y="-220"/>
     </wire>
     <wire>
-      <p1 x="240" y="-60"/>
-      <p2 x="240" y="-20"/>
+      <p1 x="160" y="-60"/>
+      <p2 x="160" y="-20"/>
     </wire>
     <wire>
-      <p1 x="420" y="660"/>
-      <p2 x="420" y="680"/>
+      <p1 x="640" y="580"/>
+      <p2 x="640" y="700"/>
+    </wire>
+    <wire>
+      <p1 x="740" y="540"/>
+      <p2 x="740" y="580"/>
     </wire>
     <wire>
       <p1 x="420" y="-340"/>
@@ -889,14 +848,6 @@ end loop </dataString>
       <p2 x="420" y="300"/>
     </wire>
     <wire>
-      <p1 x="580" y="580"/>
-      <p2 x="580" y="700"/>
-    </wire>
-    <wire>
-      <p1 x="260" y="640"/>
-      <p2 x="260" y="680"/>
-    </wire>
-    <wire>
       <p1 x="340" y="-100"/>
       <p2 x="340" y="20"/>
     </wire>
@@ -917,12 +868,12 @@ end loop </dataString>
       <p2 x="340" y="140"/>
     </wire>
     <wire>
-      <p1 x="460" y="600"/>
-      <p2 x="460" y="640"/>
+      <p1 x="360" y="700"/>
+      <p2 x="360" y="720"/>
     </wire>
     <wire>
-      <p1 x="700" y="580"/>
-      <p2 x="700" y="620"/>
+      <p1 x="300" y="540"/>
+      <p2 x="300" y="720"/>
     </wire>
   </wires>
   <measurementOrdering/>
